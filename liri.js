@@ -8,8 +8,28 @@ var Spotify = require('node-spotify-api');
 var request = require('request');
 var fs = require ('fs'); 
 
-switch (process2){
+switch (process2) {
+	case "my-tweets";
+		twitter();
+		break;
 
+	case "spotify-this-song";
+		spotify();
+		break;
+
+	case "movie-this";
+		ombd();
+		break;
+
+	case "do-what-it-says"
+		readfile();
+		break;
+
+	default:
+		console.log("Choose one of the following: my-tweets, spotify-this-song, movie-this, do-what-it-says")
+}
+
+function twitter () {
 
 
 
