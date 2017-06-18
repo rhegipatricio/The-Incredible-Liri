@@ -31,9 +31,29 @@ switch (process2) {
 
 function twitter () {
 
+	var client = new twitter(keys.twitterKeys);
+
+
+	var params = {screenname: 'Liri_UCF_Gi', count: '20'};
+
+	client.get('statuses/user_timeline', params, function(err, tweets, response) {
+
+		if(!error) {
+			var data = [];
+			for (var i=0; i < tweets.length; i++) {
+				data.push ({
+					'created at: ' : tweets[i].created_at,
+					'Tweets: ' : tweets[i].text,
+			});
+		}
+	}
+
+});
+
+};
 
 
 
 
-	
-}
+
+
