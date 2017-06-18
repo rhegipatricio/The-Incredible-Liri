@@ -29,8 +29,8 @@ switch (process2) {
 		console.log("Choose one of the following: my-tweets, spotify-this-song, movie-this, do-what-it-says")
 }
 
-function tweets () {
-	console.log("tweet this");
+function twitter () {
+	//console.log("tweet this");
 	var client = new twitter(keys.twitterKeys);
 	var params = {screen_name: 'Liri_UCF_Gi', count: 20};
 
