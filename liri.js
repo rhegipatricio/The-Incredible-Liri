@@ -32,7 +32,7 @@ switch (process2) {
 function twitter () {
 	console.log("tweet this");
 	var client = new twitter(keys.twitterKeys);
-	var params = {screen_name: 'ucfliri', count: 20};
+	var params = {screen_name: 'ucfliri', limit: 20};
 
 	client.get("statuses/user_timeline", function(error, tweets, response){
 		if(error){
@@ -41,7 +41,7 @@ function twitter () {
 		else{
 			console.log("");
 
-			for(i = 0; i < 20; i++){
+			for(i = 0; i < tweets.length; i++){
 				console.log(tweets[i].text);
 				console.log(tweets[i].created_at);
 				console.log("----------------------------------------");
