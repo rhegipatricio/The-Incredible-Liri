@@ -9,19 +9,19 @@ var request = require('request');
 var fs = require ('fs'); 
 
 switch (process2) {
-	case "my-tweets";
+	case "my-tweets":
 		twitter();
 		break;
 
-	case "spotify-this-song";
+	case "spotify-this-song":
 		spotify();
 		break;
 
-	case "movie-this";
+	case "movie-this":
 		ombd();
 		break;
 
-	case "do-what-it-says"
+	case "do-what-it-says":
 		readfile();
 		break;
 
@@ -29,29 +29,29 @@ switch (process2) {
 		console.log("Choose one of the following: my-tweets, spotify-this-song, movie-this, do-what-it-says")
 }
 
-function twitter () {
-
+function tweets () {
+	console.log("tweet this");
 	var client = new twitter(keys.twitterKeys);
+	var params = {screen_name: 'Liri_UCF_Gi', count: 20};
 
-
-	var params = {screenname: 'Liri_UCF_Gi', count: '20'};
-
-	client.get('statuses/user_timeline', params, function(err, tweets, response) {
-
-		if(!error) {
-			var data = [];
-			for (var i=0; i < tweets.length; i++) {
-				data.push ({
-					'created at: ' : tweets[i].created_at,
-					'Tweets: ' : tweets[i].text,
-			});
+	client.get("statuses/user_timeline", function(error, tweets, response){
+		if(error){
+			console.log(error);
 		}
-	}
+		else{
+			console.log("");
 
-});
+			for(i = 0; i < 20; i++){
+				console.log(tweets[i].text);
+				console.log(tweets[i].created_at);
+				console.log("----------------------------------------");
+			}
+		}
 
-};
+	});	
 
+
+}
 
 
 
