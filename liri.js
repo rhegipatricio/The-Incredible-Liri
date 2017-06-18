@@ -30,8 +30,8 @@ switch (process2) {
 }
 
 function twitter () {
-	console.log("tweet this");
-	var client = new twitter(keys.twitterKeys);
+	//console.log("tweet this");
+	var client = new Twitter(keys.twitterKeys);
 	var params = {screen_name: 'ucfliri', limit: 20};
 
 	client.get("statuses/user_timeline", function(error, tweets, response){
@@ -39,12 +39,12 @@ function twitter () {
 			console.log(error);
 		}
 		else{
-			console.log(tweets);
+			//console.log(tweets);
 			}
 			for(i = 0; i < tweets.length; i++){
-				//console.log(tweets[i].text);
-				//console.log(tweets[i].created_at);
-				//console.log("----------------------------------------");
+				console.log(tweets[i].text);
+				console.log(tweets[i].created_at);
+				console.log("----------------------------------------");
 		}
 
 	});	
