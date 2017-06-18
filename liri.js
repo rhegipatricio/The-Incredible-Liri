@@ -39,13 +39,12 @@ function twitter () {
 			console.log(error);
 		}
 		else{
-			console.log("");
-
-			for(i = 0; i < tweets.length; i++){
-				console.log(tweets[i].text);
-				console.log(tweets[i].created_at);
-				console.log("----------------------------------------");
+			console.log(tweets);
 			}
+			for(i = 0; i < tweets.length; i++){
+				//console.log(tweets[i].text);
+				//console.log(tweets[i].created_at);
+				//console.log("----------------------------------------");
 		}
 
 	});	
