@@ -32,7 +32,7 @@ switch (process2) {
 function twitter () {
 	//console.log("tweet this");
 	var client = new twitter(keys.twitterKeys);
-	var params = {screen_name: 'Liri_UCF_Gi', count: 20};
+	var params = {screen_name: 'UcfLiri', count: 20};
 
 	client.get("statuses/user_timeline", function(error, tweets, response){
 		if(error){
