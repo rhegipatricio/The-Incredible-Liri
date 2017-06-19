@@ -14,15 +14,25 @@ switch (process2) {
 		break;
 
 	case "spotify-this-song":
-		spotify();
+		if (process3 === undefined) {
+			process3 = "The Sign - Ace of Base";
+			spotify();
+		} else {
+			spotify();
+		}
 		break;
 
 	case "movie-this":
-		omdb();
+		if (process3 === undefined) {
+			process3 = "Mr. Nobody";
+			omdb();
+		} else {
+			omdb();
+		}
 		break;
-
+		
 	case "do-what-it-says":
-		readfile();
+		random();
 		break;
 
 	default:
@@ -68,14 +78,13 @@ function spotify () {
 	console.log(data.tracks.items[0].album.artists[0].name);
 	console.log(data.tracks.items[0].album.name);
 	console.log(data.tracks.items[0].name);
-	console.log(data.tracks.items[0].uri); 
+	console.log(data.tracks.items[0].preview_url); 
 	});
 }
 
 
 //OMDB
-function omdb () {
-
+function omdb (){
 	request("http://www.omdbapi.com/?t=" + process3 + "&apikey=40e9cece", function(error, response, body) {
 		if (!error && response.statusCode === 200) {
 			console.log(JSON.parse(body).Title);
@@ -85,13 +94,26 @@ function omdb () {
 			console.log(JSON.parse(body).Language);
 			console.log(JSON.parse(body).Plot);
 			console.log(JSON.parse(body).Actors);
-
 		}
 	})
 }
 
 //Do What It Says
-function 
+function random (){
+	
+	fs.readFile("random.txt", "utf8", function(err, data){
+		if (err){
+			return console.log(err);
+		}
+		var dataSplit = data.split(",");
+		//command = data [0];
+		process3 = dataSplit[1];
+
+		spotify();
+		})
+
+	
+}
 
 
 
