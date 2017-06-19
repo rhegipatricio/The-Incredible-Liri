@@ -16,6 +16,10 @@ They are:
 
 TWITTER
 
-"my-tweets" pulls from the Twitter API. In this instance, it'll pull from my dummy Twitter I specifically created for this assignment 
+"my-tweets" pulls from the Twitter API. In this instance, it'll pull from my dummy Twitter account I specifically created for this assignment. 
 
 ![In this instance, it'll pull from my dummy Twitter I specifically created for this assignment ](/images/01_twitter_generated_from.png)
+
+The "node liri my-tweets" will request the first 20 tweets of the dummy Twitter account.
+
+![](/images/02_twitter_command.png)
