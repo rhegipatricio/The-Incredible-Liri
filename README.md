@@ -14,9 +14,13 @@ They are:
 - "movie-this"
 - "do-what-it-says"
 
+These four commands are after "node liri". Node Liri is requesting from LIRI, basically, "Hey Siri" when requesting from Apple's SIRI. The four commands are whatever the user wants to command. After Spotify (spotify-this-song), the user will input their song choice title to get information about the song. It is the same as with OMDB (movie-this), where the user will input their film choice title to get information about their selected film.
+
 01) TWITTER
 
 The command "my-tweets" pulls from the Twitter API. In this instance, it'll pull from my dummy Twitter account I specifically created for this assignment. 
+
+The twitter profile url is: https://twitter.com/UcfLiri
 
 ![In this instance, it'll pull from my dummy Twitter I specifically created for this assignment ](/images/01_twitter_generated_from.png)
 
@@ -28,13 +32,13 @@ Here are tweets! The earlier tweets are at the bottom, much like twitter and sho
 
 ![](/images/03_twitter_results.png)
 
-Notice how they matchup with a screenshot of the actual twitter account tweets starting with the "Happy Father's Day" tweet and goes up.
+Notice how LIRI's pulled tweets and the tweets from the actual twitter matchup with a screenshot of the actual twitter account tweets starting with the "Happy Father's Day" tweet and goes up to the "HIMYM right now. Season 5 Ep 15 "Rabbit or Duck" tweet.
 
 ![](/images/04_matchup.png)
 
 02) SPOTIFY
 
-The command "spotify-this-song" will pull from the spotify API. The user must replace "--song title--" with an actual song title to get desired result.
+The command "spotify-this-song" will pull from the spotify API. The user must replace "-song title-" with an actual song title to get desired result.
 
 ![](/images/05_spotify_command.png)
 
@@ -42,11 +46,11 @@ For this example, "The Memory Remains" by Metallica was chosen. The result bring
 
 ![](/images/06_spotify_results.png)
 
-If spotify doesn't currently have that song or no URL exists, "null" will show under URL, such as with "My Name Is" by Eminem.
+If Spotify doesn't currently have that song or no URL exists, "null" will show under URL, such as with "My Name Is" by Eminem.
 
 ![](/images/07_spotify_null.png)
 
-If no song is specifed, LIRI will default to "The Sign" by Ace of Base.
+If no song is specifed (i.e. nothing after "spotify-this-song"), LIRI will default to "The Sign" by Ace of Base.
 
 ![](/images/08_spotify_no_specify.png)
 
