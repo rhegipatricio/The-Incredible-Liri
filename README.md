@@ -72,4 +72,5 @@ The command "do-what-it-says" will pull the text from an an internal created ran
 
 Lastly, a friendly reminder will open up if the user just enters "node liri". LIRI will request that the user enters one of the four commands (as well as what information the user wants to request such as the song title for Spotify after "spotify-this-song" and movie title for OMDB after "movie-this".
 
+
 ![](/images/13_no_option_selected.png)
