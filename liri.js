@@ -26,7 +26,7 @@ switch (process2) {
 		break;
 
 	default:
-		console.log("Choose one of the following: my-tweets, spotify-this-song, movie-this, do-what-it-says")
+		console.log("Please choose one of the following: my-tweets, spotify-this-song, movie-this, do-what-it-says")
 }
 //Twitter
 function twitter () {
@@ -89,6 +89,9 @@ function omdb () {
 		}
 	})
 }
+
+//Do What It Says
+function 
 
 
 
