@@ -76,10 +76,10 @@ function spotify () {
 
 //console.log(data.tracks.items[0]);
 	console.log("-----------------------------------------------------")
-	console.log("Artist: " + data.tracks.items[0].album.artists[0].name);
-	console.log("Album: " + data.tracks.items[0].album.name);
-	console.log("Song: " + data.tracks.items[0].name);
-	console.log("URL: " + data.tracks.items[0].preview_url);
+	console.log("Artist: 	" + data.tracks.items[0].album.artists[0].name);
+	console.log("Album: 		" + data.tracks.items[0].album.name);
+	console.log("Song: 		" + data.tracks.items[0].name);
+	console.log("URL:  		" + data.tracks.items[0].preview_url);
 	console.log("-----------------------------------------------------"); 
 	});
 }
