@@ -34,7 +34,7 @@ Notice how they matchup with a screenshot of the actual twitter account tweets s
 
 02) SPOTIFY
 
-The command "spotify-this-song" will pull from the spotify API. The user must replace "--song title--" with an actual song title to get desired result.
+The command "spotify-this-song" will pull from the spotify API. The user must replace "-song title-" with an actual song title to get desired result.
 
 ![](/images/05_spotify_command.png)
 
