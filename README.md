@@ -28,7 +28,7 @@ Here are tweets! The earlier tweets are at the bottom, much like twitter and sho
 
 ![](/images/03_twitter_results.png)
 
-Notice how they matchup with a screenshot of the actual twitter account tweets starting with the "Happy Father's Day" tweet
+Notice how they matchup with a screenshot of the actual twitter account tweets starting with the "Happy Father's Day" tweet and goes up.
 
 ![](/images/04_matchup.png)
 
