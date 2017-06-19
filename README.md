@@ -16,7 +16,7 @@ They are:
 
 TWITTER
 
-"my-tweets" pulls from the Twitter API. In this instance, it'll pull from my dummy Twitter account I specifically created for this assignment. 
+The command "my-tweets" pulls from the Twitter API. In this instance, it'll pull from my dummy Twitter account I specifically created for this assignment. 
 
 ![In this instance, it'll pull from my dummy Twitter I specifically created for this assignment ](/images/01_twitter_generated_from.png)
 
@@ -24,11 +24,20 @@ The "node liri my-tweets" will request the first 20 tweets of the dummy Twitter 
 
 ![](/images/02_twitter_command.png)
 
-Here are tweets! The earlier tweets are at the bottom, much like twitter.
+Here are tweets! The earlier tweets are at the bottom, much like twitter and show when the tweets were composed.
 
 ![](/images/03_twitter_results.png)
 
-Notice how they matchup with a screenshot of the actual twitter account tweets.
+Notice how they matchup with a screenshot of the actual twitter account tweets starting with the "Happy Father's Day" tweet
 
 ![](/images/04_matchup.png)
 
+SPOTIFY
+
+The command "spotify-this-song" will pull from the spotify API. The user must replace "--song title--" with an actual song title to get desired result.
+
+![](/images/05_spotify_command.png)
+
+For this example, "The Memory Remains" by Metallica was chosen. The result brings back the Artist, Album, Song Title, and URL.
+
+![](/images/06_spotify_results.png)
