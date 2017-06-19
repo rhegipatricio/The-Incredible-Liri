@@ -90,14 +90,15 @@ function omdb (){
 	request("http://www.omdbapi.com/?t=" + process3 + "&apikey=40e9cece", function(error, response, body) {
 		if (!error && response.statusCode === 200) {
 			console.log("-----------------------------------------------------");
-			console.log("Movie Title: " + JSON.parse(body).Title);
-			console.log("Movie Year: " + JSON.parse(body).Year);
-			console.log("Internet Movie Database Rating: " + JSON.parse(body).imdbRating);
-			console.log("Country of release: " + JSON.parse(body).Country);
-			console.log("Languages: " + JSON.parse(body).Language);
-			console.log("Plot/Synopsis: " + JSON.parse(body).Plot);
-			console.log("Main Cast (actors): " + JSON.parse(body).Actors);
+			console.log("Movie Title: 		" + JSON.parse(body).Title);
+			console.log("Release Year: 		" + JSON.parse(body).Year);
+			console.log("IMDB Rating: 		" + JSON.parse(body).imdbRating);
+			console.log("Country of release: 	" + JSON.parse(body).Country);
+			console.log("Languages: 		" + JSON.parse(body).Language);
+			console.log("Plot/Synopsis: 		" + JSON.parse(body).Plot);
+			console.log("Main Cast: 		" + JSON.parse(body).Actors);
 			console.log("-----------------------------------------------------");
+			//console.log(response);
 		}
 	})
 }
