@@ -59,6 +59,7 @@ function twitter () {
 			//console.log(tweets);
 			}
 			for(i = 0; i < tweets.length; i++){
+				console.log("----------------------------------------");
 				console.log(tweets[i].text);
 				console.log(tweets[i].created_at);
 				console.log("----------------------------------------");
