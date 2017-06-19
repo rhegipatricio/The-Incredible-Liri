@@ -28,7 +28,7 @@ switch (process2) {
 	default:
 		console.log("Choose one of the following: my-tweets, spotify-this-song, movie-this, do-what-it-says")
 }
-
+//Twitter
 function twitter () {
 	//console.log("tweet this");
 	var client = new Twitter(keys.twitterKeys);
@@ -51,7 +51,7 @@ function twitter () {
 
 
 }
-
+//Spotify
 function spotify () {
 
 	var spotify = new Spotify({
@@ -72,9 +72,11 @@ function spotify () {
 	});
 }
 
+
+//OMDB
 function omdb () {
 
-	request("http://www.omdbapi.com/?t=remember+the+titans&y=&plot=short&apikey=40e9cece", function(error, response, body) {
+	request("http://www.omdbapi.com/?t=" + process3 + "&apikey=40e9cece", function(error, response, body) {
 		if (!error && response.statusCode === 200) {
 			console.log(JSON.parse(body).Title);
 			console.log(JSON.parse(body).Year);
@@ -83,9 +85,6 @@ function omdb () {
 			console.log(JSON.parse(body).Language);
 			console.log(JSON.parse(body).Plot);
 			console.log(JSON.parse(body).Actors);
-
-
-
 
 		}
 	})
