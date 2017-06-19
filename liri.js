@@ -14,6 +14,7 @@ switch (process2) {
 		break;
 
 	case "spotify-this-song":
+		//if user choice is undefined, it will default to "The Sign by Ace of Base"
 		if (process3 === undefined) {
 			process3 = "The Sign - Ace of Base";
 			spotify();
@@ -23,6 +24,7 @@ switch (process2) {
 		break;
 
 	case "movie-this":
+		//if user choice is undefined, film will default to "Mr. Nobody"
 		if (process3 === undefined) {
 			process3 = "Mr. Nobody";
 			omdb();
