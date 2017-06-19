@@ -52,8 +52,9 @@ function twitter () {
 	var params = {screen_name: 'ucfliri', limit: 20};
 
 	client.get("statuses/user_timeline", function(error, tweets, response){
-		if(error){
-			console.log(error);
+		//logs the error
+		if(err){
+			console.log(err);
 		}
 		else{
 			//console.log(tweets);
