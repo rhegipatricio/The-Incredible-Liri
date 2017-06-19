@@ -9,10 +9,12 @@ var request = require('request');
 var fs = require ('fs'); 
 //switch cases and defaults
 switch (process2) {
+	//twitter case
 	case "my-tweets":
 		twitter();
 		break;
 
+	//spotify case
 	case "spotify-this-song":
 		//if user choice is undefined, it will default to "The Sign by Ace of Base"
 		if (process3 === undefined) {
@@ -23,6 +25,7 @@ switch (process2) {
 		}
 		break;
 
+	//omdb case
 	case "movie-this":
 		//if user choice is undefined, film will default to "Mr. Nobody"
 		if (process3 === undefined) {
@@ -32,17 +35,19 @@ switch (process2) {
 			omdb();
 		}
 		break;
-		
+
+	//random case		
 	case "do-what-it-says":
 		random();
 		break;
 
+	//if no responses are specified
 	default:
 		console.log("Please choose one of the following: my-tweets, spotify-this-song, movie-this, do-what-it-says")
 }
 //Twitter
 function twitter () {
-	//console.log("tweet this");
+	//console.log("tweet this shiz");
 	var client = new Twitter(keys.twitterKeys);
 	var params = {screen_name: 'ucfliri', limit: 20};
 
@@ -72,6 +77,7 @@ function spotify () {
   		if (err) {
     	return console.log('Error occurred: ' + err);
   	}
+  	//Results 
 	console.log("-----------------------------------------------------")
 	console.log("Artist: 	" + data.tracks.items[0].album.artists[0].name);
 	console.log("Album: 		" + data.tracks.items[0].album.name);
@@ -82,6 +88,7 @@ function spotify () {
 }
 //OMDB
 function omdb (){
+	//requests from OMDB. Process3 is the user input (what movie they want to research). API key is 40e9cece.
 	request("http://www.omdbapi.com/?t=" + process3 + "&apikey=40e9cece", function(error, response, body) {
 		if (!error && response.statusCode === 200) {
 			console.log("-----------------------------------------------------");
@@ -97,7 +104,6 @@ function omdb (){
 		}
 	})
 }
-
 //Do What It Says
 function random (){
 	//pulls text from random.txt
