@@ -1,13 +1,13 @@
-
+//processes
 var process2 = process.argv[2];
 var process3 = process.argv[3];
-
+//variables
 var keys = require('./keys.js');
 var Twitter = require('twitter');
 var Spotify = require('node-spotify-api');
 var request = require('request');
 var fs = require ('fs'); 
-
+//switch cases and defaults
 switch (process2) {
 	case "my-tweets":
 		twitter();
@@ -75,10 +75,11 @@ function spotify () {
   	}
 
 //console.log(data.tracks.items[0]);
-	console.log(data.tracks.items[0].album.artists[0].name);
-	console.log(data.tracks.items[0].album.name);
-	console.log(data.tracks.items[0].name);
-	console.log(data.tracks.items[0].preview_url); 
+	console.log("Artist: " + data.tracks.items[0].album.artists[0].name);
+	console.log("Album: " + data.tracks.items[0].album.name);
+	console.log("Song: " + data.tracks.items[0].name);
+	console.log("URL: " + data.tracks.items[0].preview_url);
+	console.log("---------------------------------------"); 
 	});
 }
 
