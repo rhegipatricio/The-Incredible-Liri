@@ -41,3 +41,12 @@ The command "spotify-this-song" will pull from the spotify API. The user must re
 For this example, "The Memory Remains" by Metallica was chosen. The result brings back the Artist, Album, Song Title, and URL.
 
 ![](/images/06_spotify_results.png)
+
+If spotify doesn't currently have that song or no URL exists, "null" will show under URL.
+
+![](/images/07_spotify_null.png)
+
+If no song is specifed, LIRI will default to "The Sign" by Ace of Base.
+
+![](/images/08_spotify_no_specify.png)
+
