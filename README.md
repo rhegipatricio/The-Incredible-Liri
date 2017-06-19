@@ -52,8 +52,16 @@ If no song is specifed, LIRI will default to "The Sign" by Ace of Base.
 
 OMDB
 
-The comman "movie-this" will request from the OMDB API. The user must replace "-movie title-" with an actual movie title to get desired result.
+The command "movie-this" will request from the OMDB API. The user must replace "-movie title-" with an actual movie title to get desired result.
 
 ![](/images/09_omdb_command.png)
+
+For this example, "Little Giants" was selected. The result brings back the Movie Title, Release Year, Internet Movie Database (IMDB) rating, the Country of Release, the language(s), the Plot/Synopsis, and the Main Cast.
+
+![](/images/10_omdb_results.png)
+
+If no film title has been entered by the user, LIRI will default to the film "Mr. Nobody". Notice how there is nothing after "movie-this"
+
+![](/images/11_omdb_no_specify.png)
 
 
