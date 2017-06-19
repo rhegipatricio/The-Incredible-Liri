@@ -92,11 +92,11 @@ function omdb (){
 			console.log("-----------------------------------------------------");
 			console.log("Movie Title: " + JSON.parse(body).Title);
 			console.log("Movie Year: " + JSON.parse(body).Year);
-			console.log(JSON.parse(body).imdbRating);
-			console.log(JSON.parse(body).Country);
-			console.log(JSON.parse(body).Language);
-			console.log(JSON.parse(body).Plot);
-			console.log(JSON.parse(body).Actors);
+			console.log("Internet Movie Database Rating: " + JSON.parse(body).imdbRating);
+			console.log("Country of release: " + JSON.parse(body).Country);
+			console.log("Languages: " + JSON.parse(body).Language);
+			console.log("Plot/Synopsis: " + JSON.parse(body).Plot);
+			console.log("Main Cast (actors): " + JSON.parse(body).Actors);
 			console.log("-----------------------------------------------------");
 		}
 	})
