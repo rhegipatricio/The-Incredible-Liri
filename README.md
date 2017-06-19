@@ -14,7 +14,7 @@ They are:
 - "movie-this"
 - "do-what-it-says"
 
-TWITTER
+01) TWITTER
 
 The command "my-tweets" pulls from the Twitter API. In this instance, it'll pull from my dummy Twitter account I specifically created for this assignment. 
 
@@ -32,7 +32,7 @@ Notice how they matchup with a screenshot of the actual twitter account tweets s
 
 ![](/images/04_matchup.png)
 
-SPOTIFY
+02) SPOTIFY
 
 The command "spotify-this-song" will pull from the spotify API. The user must replace "--song title--" with an actual song title to get desired result.
 
@@ -50,7 +50,7 @@ If no song is specifed, LIRI will default to "The Sign" by Ace of Base.
 
 ![](/images/08_spotify_no_specify.png)
 
-OMDB
+03) OMDB
 
 The command "movie-this" will request from the OMDB API. The user must replace "-movie title-" with an actual movie title to get desired result.
 
@@ -60,8 +60,16 @@ For this example, "Little Giants" was selected. The result brings back the Movie
 
 ![](/images/10_omdb_results.png)
 
-If no film title has been entered by the user, LIRI will default to the film "Mr. Nobody". Notice how there is nothing after "movie-this"
+If no film title has been entered by the user, LIRI will default to the film "Mr. Nobody". Notice how there is nothing after "movie-this". It is because it has been defaulted to "Mr. Nobody".
 
 ![](/images/11_omdb_no_specify.png)
 
+04) DO-WHAT-IT-SAYS
 
+The command "do-what-it-says" will pull the text from an an internal created random.txt file. In that file, there is only one line of text: spotify-this-song, "I Want it That Way" but notice how it didn't pull just the text, but also the Spotify information. That is because the command "spotify-this-song" is in it as well.
+
+![](/images/12_do_what_it_says.png)
+
+Lastly, a friendly reminder will open up if the user just enters "node liri". LIRI will request that the user enters one of the four commands (as well as what information the user wants to request such as the song title for Spotify after "spotify-this-song" and movie title for OMDB after "movie-this".
+
+![](/images/13_no_option_selected.png)
