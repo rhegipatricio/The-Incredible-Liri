@@ -42,11 +42,18 @@ For this example, "The Memory Remains" by Metallica was chosen. The result bring
 
 ![](/images/06_spotify_results.png)
 
-If spotify doesn't currently have that song or no URL exists, "null" will show under URL.
+If spotify doesn't currently have that song or no URL exists, "null" will show under URL, such as with "My Name Is" by Eminem.
 
 ![](/images/07_spotify_null.png)
 
 If no song is specifed, LIRI will default to "The Sign" by Ace of Base.
 
 ![](/images/08_spotify_no_specify.png)
+
+OMDB
+
+The comman "movie-this" will request from the OMDB API. The user must replace "-movie title-" with an actual movie title to get desired result.
+
+![](/images/09_omdb_command.png)
+
 
