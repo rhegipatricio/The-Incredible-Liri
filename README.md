@@ -16,4 +16,4 @@ They are:
 
 "my-tweets" pulls from the Twitter API. In this instance, it'll pull from my dummy Twitter I specifically created for this assignment 
 
-![In this instance, it'll pull from my dummy Twitter I specifically created for this assignment ]("/images/01_twitter_generated_from.png")
+![In this instance, it'll pull from my dummy Twitter I specifically created for this assignment ]("images/01_twitter_generated_from.png")
