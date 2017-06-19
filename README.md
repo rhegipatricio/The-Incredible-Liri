@@ -46,7 +46,7 @@ If Spotify doesn't currently have that song or no URL exists, "null" will show u
 
 ![](/images/07_spotify_null.png)
 
-If no song is specifed, LIRI will default to "The Sign" by Ace of Base.
+If no song is specifed (i.e. nothing after "spotify-this-song"), LIRI will default to "The Sign" by Ace of Base.
 
 ![](/images/08_spotify_no_specify.png)
 
