@@ -14,6 +14,8 @@ They are:
 - "movie-this"
 - "do-what-it-says"
 
+These four commands are after "node liri". Node Liri is requesting from LIRI, basically, "Hey Siri" when requesting from Apple's SIRI. The four commands are whatever the user wants to command. After Spotify (spotify-this-song), the user will input their song choice title to get information about the song. It is the same as with OMDB (movie-this), where the user will input their film choice title to get information about their selected film.
+
 01) TWITTER
 
 The command "my-tweets" pulls from the Twitter API. In this instance, it'll pull from my dummy Twitter account I specifically created for this assignment. 
