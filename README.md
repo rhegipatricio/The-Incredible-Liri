@@ -1,6 +1,6 @@
 # liri-bot-app
 
-Overview
+OVERVIEW
 
 For this assignment, LIRI was created. Liri is and stands for Language Interpretation and Recognition Interface. It works in node and takes commands from the user and gives back data.
 
@@ -13,6 +13,8 @@ They are:
 - "spotify-this-song"
 - "movie-this"
 - "do-what-it-says"
+
+TWITTER
 
 "my-tweets" pulls from the Twitter API. In this instance, it'll pull from my dummy Twitter I specifically created for this assignment 
 
