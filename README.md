@@ -42,7 +42,7 @@ For this example, "The Memory Remains" by Metallica was chosen. The result bring
 
 ![](/images/06_spotify_results.png)
 
-If spotify doesn't currently have that song or no URL exists, "null" will show under URL, such as with "My Name Is" by Eminem.
+If Spotify doesn't currently have that song or no URL exists, "null" will show under URL, such as with "My Name Is" by Eminem.
 
 ![](/images/07_spotify_null.png)
 
