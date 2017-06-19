@@ -60,23 +60,18 @@ function twitter () {
 		}
 
 	});	
-
-
 }
 //Spotify
 function spotify () {
-
+	//spotify keys requestd
 	var spotify = new Spotify({
 		id: "bef31be7a3b84a6d9fe98ddd7bf12b61", 
 		secret: "3a1ae5d36aaa45bcac14b95c91f653be"
 	});
- 
 	spotify.search({ type: 'track', query: process3 }, function(err, data) {
   		if (err) {
     	return console.log('Error occurred: ' + err);
   	}
-
-//console.log(data.tracks.items[0]);
 	console.log("-----------------------------------------------------")
 	console.log("Artist: 	" + data.tracks.items[0].album.artists[0].name);
 	console.log("Album: 		" + data.tracks.items[0].album.name);
@@ -85,8 +80,6 @@ function spotify () {
 	console.log("-----------------------------------------------------"); 
 	});
 }
-
-
 //OMDB
 function omdb (){
 	request("http://www.omdbapi.com/?t=" + process3 + "&apikey=40e9cece", function(error, response, body) {
@@ -107,7 +100,7 @@ function omdb (){
 
 //Do What It Says
 function random (){
-	
+	//pulls text from random.txt
 	fs.readFile("random.txt", "utf8", function(err, data){
 		if (err){
 			return console.log(err);
@@ -118,8 +111,6 @@ function random (){
 
 		spotify();
 		})
-
-	
 }
 
 
