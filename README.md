@@ -20,6 +20,8 @@ These four commands are after "node liri". Node Liri is requesting from LIRI, ba
 
 The command "my-tweets" pulls from the Twitter API. In this instance, it'll pull from my dummy Twitter account I specifically created for this assignment. 
 
+The twitter profile url is: https://twitter.com/UcfLiri
+
 ![In this instance, it'll pull from my dummy Twitter I specifically created for this assignment ](/images/01_twitter_generated_from.png)
 
 The "node liri my-tweets" will request the first 20 tweets of the dummy Twitter account.
