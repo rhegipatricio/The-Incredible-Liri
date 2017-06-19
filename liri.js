@@ -90,8 +90,8 @@ function omdb (){
 	request("http://www.omdbapi.com/?t=" + process3 + "&apikey=40e9cece", function(error, response, body) {
 		if (!error && response.statusCode === 200) {
 			console.log("-----------------------------------------------------");
-			console.log(JSON.parse(body).Title);
-			console.log(JSON.parse(body).Year);
+			console.log("Movie Title: " + JSON.parse(body).Title);
+			console.log("Movie Year: " + JSON.parse(body).Year);
 			console.log(JSON.parse(body).imdbRating);
 			console.log(JSON.parse(body).Country);
 			console.log(JSON.parse(body).Language);
