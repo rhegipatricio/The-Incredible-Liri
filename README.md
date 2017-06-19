@@ -23,3 +23,12 @@ TWITTER
 The "node liri my-tweets" will request the first 20 tweets of the dummy Twitter account.
 
 ![](/images/02_twitter_command.png)
+
+Here are tweets! The earlier tweets are at the bottom, much like twitter.
+
+![](/images/03_twitter_results.png)
+
+Notice how they matchup with a screenshot of the actual twitter account tweets.
+
+![](/images/04_matchup.png)
+
