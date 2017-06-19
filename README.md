@@ -16,5 +16,4 @@ They are:
 
 "my-tweets" pulls from the Twitter API. In this instance, it'll pull from my dummy Twitter I specifically created for this assignment 
 
-'"/Users/rheginaldpatricio/Desktop/Tweets are generated Here.png
 
