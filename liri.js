@@ -18,7 +18,7 @@ switch (process2) {
 		break;
 
 	case "movie-this":
-		ombd();
+		omdb();
 		break;
 
 	case "do-what-it-says":
@@ -72,6 +72,24 @@ function spotify () {
 	});
 }
 
+function omdb () {
+
+	request("http://www.omdbapi.com/?t=remember+the+titans&y=&plot=short&apikey=40e9cece", function(error, response, body) {
+		if (!error && response.statusCode === 200) {
+			console.log(JSON.parse(body).Title);
+			console.log(JSON.parse(body).Year);
+			console.log(JSON.parse(body).imdbRating);
+			console.log(JSON.parse(body).Country);
+			console.log(JSON.parse(body).Language);
+			console.log(JSON.parse(body).Plot);
+			console.log(JSON.parse(body).Actors);
+
+
+
+
+		}
+	})
+}
 
 
 
