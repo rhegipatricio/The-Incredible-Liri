@@ -69,14 +69,7 @@ function spotify () {
 	console.log(data.tracks.items[0].album.name);
 	console.log(data.tracks.items[0].name);
 	console.log(data.tracks.items[0].uri); 
-});
-
-
-
-
-
-
-
+	});
 }
 
 
