@@ -28,7 +28,7 @@ Here are tweets! The earlier tweets are at the bottom, much like twitter and sho
 
 ![](/images/03_twitter_results.png)
 
-Notice how they matchup with a screenshot of the actual twitter account tweets starting with the "Happy Father's Day" tweet and goes up.
+Notice how LIRI's pulled tweets and the tweets from the actual twitter matchup with a screenshot of the actual twitter account tweets starting with the "Happy Father's Day" tweet and goes up to the "HIMYM right now. Season 5 Ep 15 "Rabbit or Duck" tweet.
 
 ![](/images/04_matchup.png)
 
