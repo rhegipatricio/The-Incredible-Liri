@@ -53,8 +53,8 @@ function twitter () {
 
 	client.get("statuses/user_timeline", function(error, tweets, response){
 		//logs the error
-		if(err){
-			console.log(err);
+		if(error){
+			console.log(error);
 		}
 		else{
 			//console.log(tweets);
